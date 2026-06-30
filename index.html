@@ -19,7 +19,7 @@
       --gd:#f59e0b;--gd2:#fbbf24;--gd3:#fde68a;
       --dark:#f4faff;--bdr:rgba(14,116,144,.22);--txt:#0a2540;
     }
-    html,body{height:100%;width:100%;background:var(--dark);font-family:'Poppins',sans-serif;color:var(--txt);overflow:hidden}
+    html,body{min-height:100%;width:100%;background:var(--dark);font-family:'Poppins',sans-serif;color:var(--txt);overflow-x:hidden}
 
     .bg{position:fixed;inset:0;z-index:0;pointer-events:none;background:
       radial-gradient(ellipse at 20% 5%,rgba(0,180,220,.10) 0%,transparent 50%),
@@ -65,7 +65,7 @@
     .p8{width:2px;height:2px;background:var(--ac3);left:94%;top:28%;animation-duration:10s;animation-delay:0s}
     @keyframes pu{0%{opacity:0;transform:translateY(0) scale(.5)}20%{opacity:.9}80%{opacity:.4}100%{opacity:0;transform:translateY(-65px) scale(1.2)}}
 
-    .page{position:relative;z-index:1;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 22px 26px;overflow:hidden;gap:0}
+    .page{position:relative;z-index:1;min-height:100vh;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 22px 40px;gap:0}
 
     .hdr{display:flex;align-items:center;gap:8px;margin-bottom:12px;animation:fu .4s ease both}
     .hl{flex:1;height:1px;max-width:42px;background:linear-gradient(90deg,transparent,var(--cy2),transparent)}
@@ -150,7 +150,7 @@
 
     .cw{width:100%;max-width:340px;margin-top:12px;animation:fu .4s .46s ease both}
     .btn{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:15px 28px;border-radius:10px;
-      background:linear-gradient(135deg,var(--nv),var(--ac),var(--cy),var(--cy3));background-size:200% auto;
+      background:linear-gradient(135deg,var(--ac),var(--cy),var(--cy3),var(--ac2));background-size:200% auto;
       color:#fff;font-family:'Poppins',sans-serif;font-weight:800;font-size:14px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;
       box-shadow:0 6px 28px rgba(0,212,255,.35);animation:bp 2.2s ease-in-out infinite,gs 3s linear infinite}
     .btn::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),transparent);transform:translateX(-100%);animation:sh 2.4s ease-in-out infinite}
@@ -167,7 +167,7 @@
     @keyframes fu{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 
     @media(max-width:480px){
-      html,body{overflow:hidden}
+      html,body{overflow-x:hidden}
       .page{padding:13px 18px 24px;justify-content:center;gap:0}
       .hdr{margin-bottom:10px}.ht{font-size:8px;letter-spacing:.28em}.hl{max-width:26px}
       .lo{width:106px;height:106px}.badge{width:25px;height:25px;font-size:12px}
