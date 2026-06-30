@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,20 +17,20 @@
       --ac:#0ea5e9;--ac2:#38bdf8;--ac3:#7dd3fc;
       --gn:#10b981;--gn2:#34d399;--gn3:#6ee7b7;
       --gd:#f59e0b;--gd2:#fbbf24;--gd3:#fde68a;
-      --dark:#040810;--bdr:rgba(0,212,255,.18);--txt:#e0f7ff;
+      --dark:#f4faff;--bdr:rgba(14,116,144,.22);--txt:#0a2540;
     }
     html,body{height:100%;width:100%;background:var(--dark);font-family:'Poppins',sans-serif;color:var(--txt);overflow:hidden}
 
     .bg{position:fixed;inset:0;z-index:0;pointer-events:none;background:
-      radial-gradient(ellipse at 20% 5%,rgba(0,212,255,.12) 0%,transparent 50%),
-      radial-gradient(ellipse at 80% 95%,rgba(14,165,233,.10) 0%,transparent 50%),
-      radial-gradient(ellipse at 50% 50%,rgba(4,8,16,.97) 0%,transparent 70%)}
+      radial-gradient(ellipse at 20% 5%,rgba(0,180,220,.10) 0%,transparent 50%),
+      radial-gradient(ellipse at 80% 95%,rgba(14,165,233,.08) 0%,transparent 50%),
+      radial-gradient(ellipse at 50% 50%,rgba(244,250,255,.97) 0%,transparent 70%)}
 
     .chart-bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
     .chart-bg svg{position:absolute;bottom:0;width:100%;height:38%;opacity:.06}
 
     .tex{position:fixed;inset:0;z-index:0;pointer-events:none;
-      background-image:radial-gradient(circle,rgba(0,212,255,.07) 1px,transparent 1px);
+      background-image:radial-gradient(circle,rgba(0,150,190,.10) 1px,transparent 1px);
       background-size:22px 22px;animation:td 26s linear infinite}
     @keyframes td{0%{background-position:0 0}100%{background-position:22px 22px}}
 
@@ -99,18 +98,18 @@
     .nrt{font-size:9px;font-weight:700;letter-spacing:.2em;color:rgba(0,212,255,.38);text-transform:uppercase}
 
     .tw{text-align:center;margin-top:10px;animation:fu .4s .12s ease both}
-    .pl{font-size:8px;font-weight:600;letter-spacing:.36em;color:rgba(255,255,255,.22);text-transform:uppercase;margin-bottom:4px}
-    h1{font-size:clamp(18px,4.8vw,42px);font-weight:900;letter-spacing:.04em;line-height:1.1;color:#fff;text-shadow:0 0 34px rgba(0,212,255,.2)}
+    .pl{font-size:8px;font-weight:600;letter-spacing:.36em;color:rgba(10,37,64,.45);text-transform:uppercase;margin-bottom:4px}
+    h1{font-size:clamp(18px,4.8vw,42px);font-weight:900;letter-spacing:.04em;line-height:1.1;color:#0a2540;text-shadow:none}
     h1 .tw1{color:var(--cy3);text-shadow:0 0 18px rgba(103,232,249,.8)}
     h1 .bj{background:linear-gradient(135deg,var(--cy),var(--cy4));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 14px rgba(0,212,255,.6))}
     .stag{display:inline-flex;align-items:center;gap:5px;background:rgba(16,185,129,.10);border:1px solid rgba(16,185,129,.28);border-radius:999px;padding:3px 14px;font-size:9px;font-weight:700;letter-spacing:.16em;color:var(--gn3);text-transform:uppercase;margin-top:5px}
     .sdot{width:5px;height:5px;border-radius:50%;background:var(--gn2);animation:dp 1.4s ease-in-out infinite}
     @keyframes dp{0%,100%{opacity:1}50%{opacity:.3}}
-    .tgl{margin-top:5px;font-size:clamp(9.5px,2vw,12px);color:rgba(255,255,255,.28);font-weight:500;letter-spacing:.03em;line-height:1.6}
+    .tgl{margin-top:5px;font-size:clamp(9.5px,2vw,12px);color:rgba(10,37,64,.6);font-weight:500;letter-spacing:.03em;line-height:1.6}
     .tgl .hi{color:var(--cy3);font-weight:700}
     .tgl .h2{color:var(--gn3);font-weight:700}
 
-    .india-banner{display:flex;align-items:center;gap:0;background:rgba(0,180,220,.08);border:1px solid var(--bdr);border-radius:10px;overflow:hidden;width:100%;max-width:340px;margin-top:12px;animation:fu .4s .20s ease both;position:relative}
+    .india-banner{display:flex;align-items:center;gap:0;background:rgba(0,150,190,.06);border:1px solid var(--bdr);border-radius:10px;overflow:hidden;width:100%;max-width:340px;margin-top:12px;animation:fu .4s .20s ease both;position:relative}
     .india-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#ff9933,#ff9933 33%,#fff 33%,#fff 66%,#138808 66%)}
     .ib-flag{padding:11px 14px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;gap:2px}
     .ib-flag-bar{width:28px;height:5px;border-radius:1px}
@@ -121,13 +120,13 @@
     .ib-div{width:1px;background:rgba(0,212,255,.18);align-self:stretch}
     .ib-txt{padding:10px 13px;flex:1}
     .ib-txt b{display:block;font-size:11.5px;font-weight:800;color:var(--cy3);letter-spacing:.04em;line-height:1.3}
-    .ib-txt span{font-size:9px;color:rgba(255,255,255,.28);font-weight:500}
+    .ib-txt span{font-size:9px;color:rgba(10,37,64,.5);font-weight:500}
     .ib-sebi{display:flex;align-items:center;gap:4px;margin-top:4px}
     .ib-sebi-dot{width:6px;height:6px;border-radius:50%;background:var(--gn2);box-shadow:0 0 6px var(--gn2);animation:dp 1.4s ease-in-out infinite}
     .ib-sebi-txt{font-size:8.5px;font-weight:700;color:var(--gn3);letter-spacing:.08em}
 
     .cg{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;width:100%;max-width:340px;margin-top:10px;animation:fu .4s .28s ease both}
-    .cc{background:rgba(0,212,255,.06);border:1px solid rgba(0,212,255,.14);border-radius:9px;padding:9px 5px;text-align:center;position:relative;overflow:hidden}
+    .cc{background:rgba(0,150,190,.05);border:1px solid rgba(0,150,190,.16);border-radius:9px;padding:9px 5px;text-align:center;position:relative;overflow:hidden}
     .cc::before{content:'';position:absolute;bottom:0;left:0;right:0;height:1.5px}
     .cc:nth-child(1)::before{background:linear-gradient(90deg,transparent,var(--cy),transparent)}
     .cc:nth-child(2)::before{background:linear-gradient(90deg,transparent,var(--ac2),transparent)}
@@ -135,18 +134,18 @@
     .cc:nth-child(4)::before{background:linear-gradient(90deg,transparent,var(--cy4),transparent)}
     .cc:nth-child(5)::before{background:linear-gradient(90deg,transparent,var(--gd2),transparent)}
     .cc:nth-child(6)::before{background:linear-gradient(90deg,transparent,var(--ac2),transparent)}
-    .ci{font-size:17px;display:block;margin-bottom:3px}
-    .cl{font-size:8px;font-weight:700;color:rgba(255,255,255,.36);text-transform:uppercase;letter-spacing:.06em;line-height:1.3}
+    .ci{font-size:20px;display:block;margin-bottom:4px}
+    .cl{font-size:10.5px;font-weight:700;color:rgba(10,37,64,.72);text-transform:uppercase;letter-spacing:.06em;line-height:1.4}
 
     .sr{display:flex;align-items:stretch;background:rgba(0,212,255,.05);border:1px solid var(--bdr);border-radius:11px;overflow:hidden;width:100%;max-width:340px;margin-top:10px;animation:fu .4s .34s ease both}
     .sc{flex:1;padding:9px 5px;text-align:center;position:relative}
     .sc+.sc::before{content:'';position:absolute;left:0;top:15%;bottom:15%;width:1px;background:var(--bdr)}
     .sv{font-size:18px;font-weight:800;line-height:1;letter-spacing:.04em}
     .sr_{color:var(--cy3)}.sg_{color:var(--gn3)}.sk_{color:var(--gd3)}
-    .sl{font-size:7.5px;font-weight:700;color:rgba(255,255,255,.25);text-transform:uppercase;letter-spacing:.1em;margin-top:2px}
+    .sl{font-size:7.5px;font-weight:700;color:rgba(10,37,64,.45);text-transform:uppercase;letter-spacing:.1em;margin-top:2px}
 
     .ir{display:flex;align-items:center;gap:10px;justify-content:center;width:100%;margin-top:9px;flex-wrap:wrap;animation:fu .4s .40s ease both}
-    .ii{display:flex;align-items:center;gap:4px;font-size:9.5px;font-weight:600;color:rgba(255,255,255,.24)}
+    .ii{display:flex;align-items:center;gap:4px;font-size:9.5px;font-weight:600;color:rgba(10,37,64,.45)}
     .is{width:3px;height:3px;border-radius:50%;background:var(--bdr);flex-shrink:0}
 
     .cw{width:100%;max-width:340px;margin-top:12px;animation:fu .4s .46s ease both}
@@ -162,7 +161,7 @@
     .tgico{width:18px;height:18px;flex-shrink:0}
     .tgico path{fill:#fff}
 
-    .cr{position:fixed;bottom:9px;left:0;right:0;text-align:center;font-size:11px;color:rgba(255,255,255,.18);z-index:100;letter-spacing:.03em}
+    .cr{position:fixed;bottom:9px;left:0;right:0;text-align:center;font-size:11px;color:rgba(10,37,64,.4);z-index:100;letter-spacing:.03em}
     .cr a{color:var(--cy2);text-decoration:none;font-weight:700}
 
     @keyframes fu{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
@@ -176,7 +175,7 @@
       .tw{margin-top:9px}.pl{font-size:6.5px;letter-spacing:.22em;margin-bottom:3px}
       h1{font-size:clamp(17px,4.8vw,22px)}.stag{font-size:8px;padding:3px 10px;margin-top:4px}.tgl{font-size:10px;margin-top:4px;line-height:1.55}
       .india-banner{margin-top:11px;max-width:100%}.ib-flag{padding:9px 11px}.ib-flag-bar{width:24px;height:4px}.ib-wheel{width:8px;height:8px}.ib-txt{padding:8px 10px}.ib-txt b{font-size:10.5px}.ib-txt span{font-size:8.5px}
-      .cg{margin-top:9px;gap:6px;max-width:100%}.cc{padding:8px 4px;border-radius:8px}.ci{font-size:15px;margin-bottom:2px}.cl{font-size:7.5px}
+      .cg{margin-top:9px;gap:6px;max-width:100%}.cc{padding:8px 4px;border-radius:8px}.ci{font-size:18px;margin-bottom:3px}.cl{font-size:9.5px;color:rgba(10,37,64,.72)}
       .sr{margin-top:9px;max-width:100%;border-radius:10px}.sc{padding:8px 4px}.sv{font-size:16px}.sl{font-size:7px}
       .ir{margin-top:8px;gap:7px}.ii{font-size:9px}
       .cw{margin-top:11px;max-width:100%;padding:0 2px}.btn{font-size:13px;padding:14px 18px;letter-spacing:.09em;border-radius:10px}
@@ -184,7 +183,7 @@
       .cr{font-size:10px;bottom:7px}
     }
     @media(max-width:370px){
-      .lo{width:90px;height:90px}h1{font-size:15px}.sv{font-size:14px}.ci{font-size:13px}.cl{font-size:7px}
+      .lo{width:90px;height:90px}h1{font-size:15px}.sv{font-size:14px}.ci{font-size:16px}.cl{font-size:9px}
       .btn{font-size:12px;padding:13px 14px}.india-banner{margin-top:9px}.cg{margin-top:8px}.sr{margin-top:7px}.cw{margin-top:10px}.tw{margin-top:8px}
     }
     @media(min-width:768px){
@@ -192,7 +191,7 @@
       .lo{width:120px;height:120px}.badge{width:30px;height:30px;font-size:14px}.nr{margin-top:12px}.nrt{font-size:10px;letter-spacing:.2em}
       .tw{margin-top:13px}.pl{font-size:8.5px;letter-spacing:.34em;margin-bottom:5px}h1{font-size:40px}.stag{font-size:10px;padding:4px 14px;margin-top:6px}.tgl{font-size:12.5px;margin-top:7px}
       .india-banner{max-width:420px;margin-top:14px}.ib-flag{padding:13px 16px}.ib-flag-bar{width:32px;height:6px}.ib-wheel{width:12px;height:12px}.ib-txt{padding:12px 14px}.ib-txt b{font-size:13px}.ib-txt span{font-size:10.5px}
-      .cg{max-width:420px;margin-top:13px;gap:9px}.cc{padding:11px 6px;border-radius:11px}.ci{font-size:20px;margin-bottom:4px}.cl{font-size:9px}
+      .cg{max-width:420px;margin-top:13px;gap:9px}.cc{padding:11px 6px;border-radius:11px}.ci{font-size:23px;margin-bottom:5px}.cl{font-size:11.5px}
       .sr{max-width:420px;margin-top:13px;border-radius:13px}.sc{padding:11px 8px}.sv{font-size:21px}.sl{font-size:8.5px;margin-top:3px}
       .ir{margin-top:12px;gap:14px}.ii{font-size:11px}
       .cw{max-width:420px;margin-top:15px}.btn{font-size:15px;padding:16px 34px;letter-spacing:.1em;border-radius:12px}
