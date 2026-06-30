@@ -19,7 +19,7 @@
       --gd:#f59e0b;--gd2:#fbbf24;--gd3:#fde68a;
       --dark:#f4faff;--bdr:rgba(14,116,144,.22);--txt:#0a2540;
     }
-    html,body{min-height:100%;width:100%;background:var(--dark);font-family:'Poppins',sans-serif;color:var(--txt);overflow-x:hidden}
+    html,body{min-height:100%;width:100%;max-width:100vw;background:var(--dark);font-family:'Poppins',sans-serif;color:var(--txt);overflow-x:hidden}
 
     .bg{position:fixed;inset:0;z-index:0;pointer-events:none;background:
       radial-gradient(ellipse at 20% 5%,rgba(0,180,220,.10) 0%,transparent 50%),
@@ -65,11 +65,11 @@
     .p8{width:2px;height:2px;background:var(--ac3);left:94%;top:28%;animation-duration:10s;animation-delay:0s}
     @keyframes pu{0%{opacity:0;transform:translateY(0) scale(.5)}20%{opacity:.9}80%{opacity:.4}100%{opacity:0;transform:translateY(-65px) scale(1.2)}}
 
-    .page{position:relative;z-index:1;min-height:100vh;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 22px 40px;gap:0}
+    .page{position:relative;z-index:1;min-height:100vh;width:100%;max-width:100vw;overflow-x:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 22px 40px;gap:0}
 
     .hdr{display:flex;align-items:center;gap:8px;margin-bottom:12px;animation:fu .4s ease both}
     .hl{flex:1;height:1px;max-width:42px;background:linear-gradient(90deg,transparent,var(--cy2),transparent)}
-    .ht{font-size:9px;font-weight:700;letter-spacing:.38em;color:var(--cy3);text-transform:uppercase;opacity:.85;white-space:nowrap}
+    .ht{font-size:9px;font-weight:700;letter-spacing:.38em;color:var(--cy3);text-transform:uppercase;opacity:.85;white-space:nowrap;max-width:100%}
 
     .ll{text-decoration:none;display:block}
     .ls{display:flex;flex-direction:column;align-items:center;animation:fu .4s .05s ease both}
@@ -169,7 +169,7 @@
     @media(max-width:480px){
       html,body{overflow-x:hidden}
       .page{padding:13px 18px 24px;justify-content:center;gap:0}
-      .hdr{margin-bottom:10px}.ht{font-size:8px;letter-spacing:.28em}.hl{max-width:26px}
+      .hdr{margin-bottom:10px}.ht{font-size:7.5px;letter-spacing:.16em;white-space:normal;text-align:center}.hl{max-width:18px}
       .lo{width:106px;height:106px}.badge{width:25px;height:25px;font-size:12px}
       .nr{margin-top:10px}.nrt{font-size:8px;letter-spacing:.14em}
       .tw{margin-top:9px}.pl{font-size:6.5px;letter-spacing:.22em;margin-bottom:3px}
